@@ -1,21 +1,17 @@
 package app;
 
-
 public class Main {
 
-    private static double CONV_F_C = 0;
-
+    static double CONV_С_F = 0;
 
     public static void main(String[] args) {
-        System.out.println("My converter degrees Fahrenheit to Celsius.");
+        System.out.println("Temperature converter from Celsius to Fahrenheit!!!");
 
-        double F = 32;
-        double celsius = convFrToCe(F);
-        System.out.println("Result is " + celsius + "° celsius.");
+        double C = 25;
+        double celsius = convCeToFa(C);
+        System.out.println("Result is " + celsius + "°.");
     }
-
-    private static double convFrToCe(double F) {
-        return CONV_F_C = ((F - 32) * 5) / 9;
-
+    private static double convCeToFa ( double C) {
+        return CONV_С_F = ((C * 9) / 5) + 32;
     }
 }
